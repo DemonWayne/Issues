@@ -1,0 +1,36 @@
+name: Improvement suggest
+description: Предложить улучшение существующего функционала
+title: "[Idea]: "
+labels: ["Тип: Усовершенствование"]
+assignees:
+  - demonwayne
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Напишите отчёт для будущей реализации улучшения!
+  - type: dropdown
+    id: project
+    attributes:
+      label: Выберите проект в который хотите предложить улучшение
+      description: В каком проекте необходимо улучшение?
+      options:
+        - MS bot
+    validations:
+      required: true
+  - type: textarea
+    id: idea-info
+    attributes:
+      label: Опишите улучшение
+      description: Информация о улучшении
+      placeholder: Подробно расскажите про улучшение.
+    validations:
+      required: true
+  - type: textarea
+    id: more-info
+    attributes:
+      label: Доп. Информация
+      description: Любая дополнительная информация которая поможет реализовать ваше улучшение.
+      placeholder: Любое дополнение
+    validations:
+      required: false
