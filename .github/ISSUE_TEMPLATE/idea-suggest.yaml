@@ -12,8 +12,8 @@ body:
   - type: dropdown
     id: project
     attributes:
-      label: Выберите проект в котором найден баг
-      description: В каком проекте найден баг?
+      label: Выберите проект в который хотите предложить идею
+      description: В какой проект хотите предложить идею?
       options:
         - MS bot
     validations:
