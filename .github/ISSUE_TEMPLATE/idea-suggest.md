@@ -1,17 +1,36 @@
----
 name: Idea suggest
-about: Предложите идею для проекта
-title: IDEA
-labels: 'Ожидается ответ, Тип: Нововведение'
-assignees: ''
-
----
-
-### Выберите проект в который хотите предположить идею
-- [ ] Youtuber bot
-
-**Опишите идею**
-Подробно расскажите о баге.
-
-**Дополнение**
-Напишите дополнение, если есть.
+description: Предложите идею для проекта
+title: "[Idea]: "
+labels: ["Тип: Нововведение"]
+assignees:
+  - demonwayne
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Напишите отчёт для будущей реализации идеи!
+  - type: dropdown
+    id: project
+    attributes:
+      label: Выберите проект в котором найден баг
+      description: В каком проекте найден баг?
+      options:
+        - MS bot
+    validations:
+      required: true
+  - type: textarea
+    id: idea-info
+    attributes:
+      label: Опишите идею
+      description: Информация о идеи
+      placeholder: Подробно расскажите про идею.
+    validations:
+      required: true
+  - type: textarea
+    id: more-info
+    attributes:
+      label: Доп. Информация
+      description: Любая дополнительная информация которая поможет реализовать вашу идею.
+      placeholder: Любое дополнение
+    validations:
+      required: false
