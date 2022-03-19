@@ -16,6 +16,7 @@ body:
       description: В каком проекте найден баг?
       options:
         - MS bot
+        - HB Public
     validations:
       required: true
   - type: textarea
