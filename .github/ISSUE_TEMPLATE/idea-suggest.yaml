@@ -16,6 +16,7 @@ body:
       description: В какой проект хотите предложить идею?
       options:
         - MS bot
+        - HB Public
     validations:
       required: true
   - type: textarea
