@@ -17,6 +17,7 @@ body:
       options:
         - MS bot
         - HB Public
+        - Epitaka Bot
     validations:
       required: true
   - type: textarea
